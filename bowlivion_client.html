@@ -46,7 +46,13 @@
 
 			let websock = null
             //let wsaddr = "wss://verudalabs.dyndns.org:8001/"
+
+            //modifiable 2 vars
             let wsaddr = "ws://127.0.0.1:8001"
+            let ground_mesh_path = '/webgl/three.js/examples/models/gltf/'
+
+
+
             let wstype = "client"
             let websock_open = false
             let client_name = null
@@ -568,7 +574,7 @@
 			}
 			let mesh_colors_RGB = [[0,0.95, 0.7],[0.95,0,0],[0,0.95, 0],[0,0,0.95]]
 
-			const loader = new GLTFLoader().setPath( '/webgl/three.js/examples/models/gltf/' );
+			const loader = new GLTFLoader().setPath(ground_mesh_path);
 
 			loader.load( 'collision-world.glb', ( gltf ) => {
 				let mesh_count = 1
