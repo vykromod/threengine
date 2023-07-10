@@ -2,7 +2,7 @@
 WebGL with Three.js
 
 # bowlivion
-  Multiplayer Ball Throwing Game
+  Multiplayer Ball Throwing Game with Physics
   Requirements:
     Python 3.x, locally hosted threejs repo clone, and http(s) server
     running bowlivion_worker.py on localhost or desired address with appropriate certificate
